@@ -87,6 +87,19 @@ li {
         box-shadow: 0px 15px 35px 0px #0000000D;
     }
 }
+
+html.anim-blocker * {
+    animation-play-state: paused !important;
+}
+
+.animatable {
+    animation-fill-mode: both;
+    animation-play-state: paused !important;
+}
+
+.animatable.show {
+    animation-play-state: running !important;
+}
 .header {
     background-color: #FAFDFF;
     animation: fadeIn 1s ease 0s;
@@ -306,7 +319,7 @@ li {
 .whatwedo__card:nth-child(5) { animation-delay: 0.5s; }
 .whatwedo__card:nth-child(6) { animation-delay: 0.6s; }
 .whatwedo__card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     box-shadow: 0px 20px 40px 0px #0000001A;
 }
 .whatwedo__card__img {
@@ -446,7 +459,7 @@ li {
 .testimonial__card:nth-child(1) { animation-delay: 0.1s; }
 .testimonial__card:nth-child(2) { animation-delay: 0.2s; }
 .testimonial__card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
     box-shadow: 0px 20px 40px 0px #0000001A;
 }
 .testimonial__card__person {
